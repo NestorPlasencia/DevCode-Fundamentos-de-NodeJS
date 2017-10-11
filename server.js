@@ -5,7 +5,8 @@ var port = process.env.PORT || 8000;
 var http = require('http');
 
 var server = http.createServer(function(req,res){
-	console.log("Se esta haciendo una peticion")
+	res.writeHead(200, {'content_type': 'text/plain'});
+	res.end("Hello World")
 });
 
 server.listen(port, function(req,res) {
