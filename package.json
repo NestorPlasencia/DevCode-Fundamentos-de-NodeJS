@@ -1,0 +1,19 @@
+{
+  "name": "fundamentos-de-node-js",
+  "version": "1.0.0",
+  "description": "Este es repositorio con toda la informacion del curso de fundamentos de node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NestorPlasencia/DevCode-Fundamentos-de-NodeJS.git"
+  },
+  "author": "NestorPlasencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NestorPlasencia/DevCode-Fundamentos-de-NodeJS/issues"
+  },
+  "homepage": "https://github.com/NestorPlasencia/DevCode-Fundamentos-de-NodeJS#readme"
+}
