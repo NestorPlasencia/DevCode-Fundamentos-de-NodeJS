@@ -10,3 +10,5 @@ server.listen(port, function(req,res) {
 server.get('/',function(req,res){
 	res.send('Hello World');
 });
+
+require('./routers')(server);
