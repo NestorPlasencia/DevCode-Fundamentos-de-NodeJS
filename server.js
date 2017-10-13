@@ -13,4 +13,6 @@ server.set('view engine', 'html');
 server.set('views', __dirname + '/views');
 swig.setDefaults({cache: false});
 
+server.use(express.static(__dirname + '/public'));
+
 require('./routers')(server);
