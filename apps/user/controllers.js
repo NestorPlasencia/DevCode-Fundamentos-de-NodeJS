@@ -1,6 +1,7 @@
 'use strict';
 var express = require('express');
 var router = express.Router();
+var User = require('./models').User;
 
 router.route('/ingresar/')
 	.get(function(req,res){
@@ -12,6 +13,17 @@ router.route('/registrar/')
 		res.render('user/register.html');
 	})
 	.post(function(req,res){
+		var user = new User({
+			username : req.body.username,
+			password : req.body.password
+		})
+		user.save(function(err){
+			if (err) {
+				console.log(err);	
+			}else{
+				res.redirect('/ingresar/');
+			}			
+		})
 		console.log(req.body);
 	});
 
