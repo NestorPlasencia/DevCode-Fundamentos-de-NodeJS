@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NestorPlasencia/DevCode-Fundamentos-de-NodeJS#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "swig": "^1.4.2"
   }

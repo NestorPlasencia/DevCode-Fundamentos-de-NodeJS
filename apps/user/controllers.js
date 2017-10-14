@@ -10,6 +10,9 @@ router.route('/ingresar/')
 router.route('/registrar/')
 	.get(function(req,res){
 		res.render('user/register.html');
+	})
+	.post(function(req,res){
+		console.log(req.body);
 	});
 
 module.exports = router;
