@@ -18,7 +18,7 @@
   "homepage": "https://github.com/NestorPlasencia/DevCode-Fundamentos-de-NodeJS#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "cookie-parse": "^0.4.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "mongoose": "^4.12.1",
