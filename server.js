@@ -4,6 +4,7 @@ var server = express();
 var port = process.env.PORT || 8000; 
 var swig = require('swig');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 
 require('./config/passport')(server);
 
@@ -19,6 +20,6 @@ swig.setDefaults({cache: false});
 server.use(express.static(__dirname + '/public'));
 
 server.use(bodyParser.urlencoded({ extended: false}));
-
+server.use(cookieParser());
 
 require('./routers')(server);
