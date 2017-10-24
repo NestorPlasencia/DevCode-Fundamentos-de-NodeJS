@@ -9,5 +9,7 @@ var passportConfig = function(server) {
 	passport.deserializeUser(function(user,done){
 		done(null,user);
 	});	
+
+	require('./local')(server);
 };
 module.exports = passportConfig;
