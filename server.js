@@ -6,7 +6,7 @@ var swig = require('swig');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session  = require('express-session');
-
+var flash = require('connect-flash');
 
 server.listen(port, function(req,res) {
 	console.log('El servidor esta escuchando en el puerto '+ port);
@@ -28,6 +28,8 @@ server.use(session({
 	resave: false,
 	saveUninitialized: true	
 }));
+
+server.use(flash());
 
 require('./config/passport')(server);
 
